@@ -19,7 +19,6 @@ public class LoginServlet extends HttpServlet {
         String useremail = req.getParameter("useremail");
         String password = req.getParameter("password");
 
-        PrintWriter out = resp.getWriter();
         HttpSession session = req.getSession();
 
         UserDao userDao = new UserDao();

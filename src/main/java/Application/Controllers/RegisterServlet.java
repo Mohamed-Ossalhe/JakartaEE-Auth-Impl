@@ -18,8 +18,6 @@ public class RegisterServlet extends HttpServlet {
         String password = req.getParameter("password");
         String mobile = req.getParameter("mobile");
 
-        PrintWriter out = resp.getWriter();
-
         UserDao userDao = new UserDao();
         User user = new User(name, email, password, mobile);
         User registeredUser = userDao.store(user);
