@@ -1,0 +1,4 @@
+url=your jdbc database url
+dbname=your database name
+username=your username
+password=your password
